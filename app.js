@@ -1,10 +1,10 @@
 const express = require('express');
+const nameRoute = require('./routes/name');
+
 const app = express();
 const PORT = 3000;
 
-app.get('/name', (req, res) => {
-    res.status(200).send('Biruk Abebe');
-});
+app.use('/name', nameRoute);
 
 
 app.listen(PORT, () => {
