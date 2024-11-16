@@ -10,7 +10,4 @@ app.use('/name', nameRoute);
 app.use('/hobby', hobbyRoute);
 app.use('/dream', dreamRoute);
 
-
-app.listen(PORT, () => {
-    console.log(`Server is running on :${PORT}`);
-});
+module.exports = app;
